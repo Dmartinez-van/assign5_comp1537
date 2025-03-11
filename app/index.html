@@ -14,11 +14,12 @@
     </head>
     <body>
         <nav>
-            <h2>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </h2>
+            <img src="img/pokemon-site-high-resolution-logo-transparent.png" class="logo" alt="logo-img"/>
+            <div class="nav-links">
+                <p class="nav-link">Home</p>
+                <p class="nav-link">About</p>
+                <p class="nav-link">Contact</p>
+            </div>
         </nav>
 
         <div id="hero">
@@ -37,100 +38,34 @@
         </div>
 
         <article id="content">
+
+          <button id="stats">Get A Random Pokemon!</button>
+          
             <div class="card" style="width: 18rem;">
-                <img src="img/detectivePika.webp" class="card-img-top" alt="...">
+                <img id="pokeImg" src="img/detectivePika.webp" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <ul style="text-decoration: none">
+                    <li>PokeID: <span id="pokeID"></span></li>
+                    <li>Name: <span id="pokeName"></span></li>
+                    <li>Type: <span id="pokeType"></span></li>
+                    <li>HP: <span id="pokeHP"></span></li>
+                    <li>Attack: <span id="pokeAttack"></span></li>
+                    <li>Defense: <span id="pokeDefense"></span></li>
+                    <li>Speed: <span id="pokeSpeed"></span></li>
+                  </ul>
                 </div>
               </div>
 
+              <button id="character">Get A Random Character!</button>
+              
               <div class="card" style="width: 18rem;">
-                <img src="img/detectivePika.webp" class="card-img-top" alt="...">
+                <img id="pokeImg" src="img/detectivePika.webp" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="img/detectivePika.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="img/detectivePika.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="img/detectivePika.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="img/detectivePika.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="img/detectivePika.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="img/detectivePika.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="img/detectivePika.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="img/detectivePika.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="img/detectivePika.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="img/detectivePika.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="img/detectivePika.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="img/detectivePika.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <ul style="text-decoration: none">
+                    <li>PokeID: <span id="characterID"></span></li>
+                    <li>Name: <span id="characterName"></span></li>
+                    <li>Region: <span id="characterRegion"></span></li>
+                  </ul>
                 </div>
               </div>
 
