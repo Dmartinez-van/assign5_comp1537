@@ -1,6 +1,6 @@
 [
   {
-    id: 1,
+    id: "1",
     name: "Bulbasaur",
     type: ["Grass", "Poison"],
     hp: 45,
